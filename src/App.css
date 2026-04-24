@@ -319,10 +319,15 @@ textarea {
   gap: 1rem;
 }
 
-.site-footer a {
+.back-to-top {
   color: var(--primary-dark);
   text-decoration: none;
   font-weight: 700;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
 }
 
 .whatsapp-float {
