@@ -79,6 +79,10 @@ const testimonials = [
 ]
 
 function App() {
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <div className="app">
       <header className="site-header" id="inicio">
@@ -244,7 +248,9 @@ function App() {
 
       <footer className="site-footer">
         <p>© {new Date().getFullYear()} Constructora Horizonte. Todos los derechos reservados.</p>
-        <a href="#inicio">Volver arriba</a>
+        <button type="button" className="back-to-top" onClick={handleBackToTop}>
+          Volver arriba
+        </button>
       </footer>
 
       <a
